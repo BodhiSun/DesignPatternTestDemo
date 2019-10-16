@@ -11,7 +11,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         DesignPatternProfile designPatternProfile = new DesignPatternProfile();
-        designPatternProfile.principleTest();
+//        designPatternProfile.principleTest();
+        designPatternProfile.patternTest();
 
     }
 }

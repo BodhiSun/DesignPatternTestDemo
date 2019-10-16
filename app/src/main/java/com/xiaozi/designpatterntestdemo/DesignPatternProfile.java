@@ -1,5 +1,7 @@
 package com.xiaozi.designpatterntestdemo;
 
+import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
+import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
 import com.xiaozi.designpatterntestdemo.principle.DependenceInversionPrinciple;
 import com.xiaozi.designpatterntestdemo.principle.InterfaceSegregationPrinciple;
@@ -120,7 +122,14 @@ public class DesignPatternProfile {
     }
 
     public void patternTest(){
-
+        System.out.println("------单例模式范例------");
+        SingletonPattern.testSingleton();
+        System.out.println("------单例模式范例扩展------");
+        SingletonPattern.testMultiton();
+        System.out.println("------原型模式范例------");
+        PrototypePattern.testPrototypePattern();
+        System.out.println("------原型模式范例扩展------");
+        PrototypePattern.testProtoTypeManager();
     }
 
 }
