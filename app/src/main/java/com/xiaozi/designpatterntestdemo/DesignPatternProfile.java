@@ -1,5 +1,8 @@
 package com.xiaozi.designpatterntestdemo;
 
+import com.xiaozi.designpatterntestdemo.pattern.AbstractFactoryPattern;
+import com.xiaozi.designpatterntestdemo.pattern.BuilderPattern;
+import com.xiaozi.designpatterntestdemo.pattern.FactoryMethodPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
 import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
@@ -130,6 +133,16 @@ public class DesignPatternProfile {
         PrototypePattern.testPrototypePattern();
         System.out.println("------原型模式范例扩展------");
         PrototypePattern.testProtoTypeManager();
+        System.out.println("------工厂方法模式范例------");
+        FactoryMethodPattern.testFactoryMethodPattern();
+        System.out.println("------工厂方法模式范例扩展------");
+        FactoryMethodPattern.testSimpleFactoryPatter();
+        System.out.println("------抽象工厂模式范例------");
+        AbstractFactoryPattern.testAbstractFactory();
+        System.out.println("------建造者模式范例------");
+        BuilderPattern.testBuildPattern();
+
+
     }
 
 }
