@@ -1,9 +1,12 @@
 package com.xiaozi.designpatterntestdemo;
 
 import com.xiaozi.designpatterntestdemo.pattern.AbstractFactoryPattern;
+import com.xiaozi.designpatterntestdemo.pattern.AdapterPattern;
+import com.xiaozi.designpatterntestdemo.pattern.BridgePattern;
 import com.xiaozi.designpatterntestdemo.pattern.BuilderPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FactoryMethodPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
+import com.xiaozi.designpatterntestdemo.pattern.ProxyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
 import com.xiaozi.designpatterntestdemo.principle.DependenceInversionPrinciple;
@@ -141,7 +144,14 @@ public class DesignPatternProfile {
         AbstractFactoryPattern.testAbstractFactory();
         System.out.println("------建造者模式范例------");
         BuilderPattern.testBuildPattern();
-
+        System.out.println("------代理模式范例------");
+        ProxyPattern.testProxyPattern();
+        System.out.println("------适配器模式范例------");
+        AdapterPattern.testAdapterPattern();
+        System.out.println("------适配器模式范例扩展------");
+        AdapterPattern.testTwoWayAdapter();
+        System.out.println("------桥接模式范例------");
+        BridgePattern.testBridgePattern();
 
     }
 
