@@ -4,7 +4,11 @@ import com.xiaozi.designpatterntestdemo.pattern.AbstractFactoryPattern;
 import com.xiaozi.designpatterntestdemo.pattern.AdapterPattern;
 import com.xiaozi.designpatterntestdemo.pattern.BridgePattern;
 import com.xiaozi.designpatterntestdemo.pattern.BuilderPattern;
+import com.xiaozi.designpatterntestdemo.pattern.CompositePattern;
+import com.xiaozi.designpatterntestdemo.pattern.DecoratorPattern;
+import com.xiaozi.designpatterntestdemo.pattern.FacadePattern;
 import com.xiaozi.designpatterntestdemo.pattern.FactoryMethodPattern;
+import com.xiaozi.designpatterntestdemo.pattern.FlyweightPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
 import com.xiaozi.designpatterntestdemo.pattern.ProxyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
@@ -152,6 +156,14 @@ public class DesignPatternProfile {
         AdapterPattern.testTwoWayAdapter();
         System.out.println("------桥接模式范例------");
         BridgePattern.testBridgePattern();
+        System.out.println("------装饰模式范例------");
+        DecoratorPattern.DecoratorPatternTest();
+        System.out.println("------外观模式范例------");
+        FacadePattern.testFacadePattern();
+        System.out.println("------享元模式范例------");
+        FlyweightPattern.testFlyweightPattern();
+        System.out.println("------组合模式-范例------");
+        CompositePattern.testCompositePattern();
 
     }
 
