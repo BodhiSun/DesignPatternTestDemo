@@ -4,6 +4,7 @@ import com.xiaozi.designpatterntestdemo.pattern.AbstractFactoryPattern;
 import com.xiaozi.designpatterntestdemo.pattern.AdapterPattern;
 import com.xiaozi.designpatterntestdemo.pattern.BridgePattern;
 import com.xiaozi.designpatterntestdemo.pattern.BuilderPattern;
+import com.xiaozi.designpatterntestdemo.pattern.CommandPattern;
 import com.xiaozi.designpatterntestdemo.pattern.CompositePattern;
 import com.xiaozi.designpatterntestdemo.pattern.DecoratorPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FacadePattern;
@@ -12,6 +13,8 @@ import com.xiaozi.designpatterntestdemo.pattern.FlyweightPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
 import com.xiaozi.designpatterntestdemo.pattern.ProxyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
+import com.xiaozi.designpatterntestdemo.pattern.StrategyPattern;
+import com.xiaozi.designpatterntestdemo.pattern.TemplateMethodPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
 import com.xiaozi.designpatterntestdemo.principle.DependenceInversionPrinciple;
 import com.xiaozi.designpatterntestdemo.principle.InterfaceSegregationPrinciple;
@@ -164,6 +167,17 @@ public class DesignPatternProfile {
         FlyweightPattern.testFlyweightPattern();
         System.out.println("------组合模式-范例------");
         CompositePattern.testCompositePattern();
+        System.out.println("------模板方法模式范例------");
+        TemplateMethodPattern.testTemplateMethodPattern();
+        System.out.println("------模板方法模式范例扩展------");
+        TemplateMethodPattern.testHookTemplateMethodPattern();
+        System.out.println("------策略模式范例------");
+        StrategyPattern.testStrategyPattern();
+        System.out.println("------命令模式范例------");
+        CommandPattern.testCommandPattern();
+        System.out.println("------命令模式范例扩展------");
+        CommandPattern.testCompositeCommandPattern();
+
 
     }
 
