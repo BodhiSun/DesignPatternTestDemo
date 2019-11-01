@@ -4,15 +4,19 @@ import com.xiaozi.designpatterntestdemo.pattern.AbstractFactoryPattern;
 import com.xiaozi.designpatterntestdemo.pattern.AdapterPattern;
 import com.xiaozi.designpatterntestdemo.pattern.BridgePattern;
 import com.xiaozi.designpatterntestdemo.pattern.BuilderPattern;
+import com.xiaozi.designpatterntestdemo.pattern.ChainOfResponsibilityPattern;
 import com.xiaozi.designpatterntestdemo.pattern.CommandPattern;
 import com.xiaozi.designpatterntestdemo.pattern.CompositePattern;
 import com.xiaozi.designpatterntestdemo.pattern.DecoratorPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FacadePattern;
 import com.xiaozi.designpatterntestdemo.pattern.FactoryMethodPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FlyweightPattern;
+import com.xiaozi.designpatterntestdemo.pattern.MediatorPattern;
+import com.xiaozi.designpatterntestdemo.pattern.ObserverPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
 import com.xiaozi.designpatterntestdemo.pattern.ProxyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
+import com.xiaozi.designpatterntestdemo.pattern.StatePattern;
 import com.xiaozi.designpatterntestdemo.pattern.StrategyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.TemplateMethodPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
@@ -177,6 +181,22 @@ public class DesignPatternProfile {
         CommandPattern.testCommandPattern();
         System.out.println("------命令模式范例扩展------");
         CommandPattern.testCompositeCommandPattern();
+        System.out.println("------责任链模式范例------");
+        ChainOfResponsibilityPattern.testChainofResponsibility();
+        System.out.println("------状态模式范例------");
+        StatePattern.testStatePattern();
+        StatePattern.testThreadState();
+        StatePattern.testShareStatePattern();
+        System.out.println("------观察者模式范例------");
+        ObserverPattern.testObserverPattern();
+        ObserverPattern.testRateObserver();
+        System.out.println("------观察者模式范例扩展------");
+        ObserverPattern.testJavaObservable();
+        System.out.println("------中介者模式范例------");
+        MediatorPattern.testMediatorPattern();
+        System.out.println("-------中介者模式范例扩展------");
+        MediatorPattern.testSimpleMediatorPattern();
+
 
 
     }
