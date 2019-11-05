@@ -11,7 +11,10 @@ import com.xiaozi.designpatterntestdemo.pattern.DecoratorPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FacadePattern;
 import com.xiaozi.designpatterntestdemo.pattern.FactoryMethodPattern;
 import com.xiaozi.designpatterntestdemo.pattern.FlyweightPattern;
+import com.xiaozi.designpatterntestdemo.pattern.InterpreterPattern;
+import com.xiaozi.designpatterntestdemo.pattern.IteratorPattern;
 import com.xiaozi.designpatterntestdemo.pattern.MediatorPattern;
+import com.xiaozi.designpatterntestdemo.pattern.MementoPattern;
 import com.xiaozi.designpatterntestdemo.pattern.ObserverPattern;
 import com.xiaozi.designpatterntestdemo.pattern.PrototypePattern;
 import com.xiaozi.designpatterntestdemo.pattern.ProxyPattern;
@@ -19,6 +22,7 @@ import com.xiaozi.designpatterntestdemo.pattern.SingletonPattern;
 import com.xiaozi.designpatterntestdemo.pattern.StatePattern;
 import com.xiaozi.designpatterntestdemo.pattern.StrategyPattern;
 import com.xiaozi.designpatterntestdemo.pattern.TemplateMethodPattern;
+import com.xiaozi.designpatterntestdemo.pattern.VisitorPattern;
 import com.xiaozi.designpatterntestdemo.principle.CompositeReusePrinciple;
 import com.xiaozi.designpatterntestdemo.principle.DependenceInversionPrinciple;
 import com.xiaozi.designpatterntestdemo.principle.InterfaceSegregationPrinciple;
@@ -196,8 +200,18 @@ public class DesignPatternProfile {
         MediatorPattern.testMediatorPattern();
         System.out.println("-------中介者模式范例扩展------");
         MediatorPattern.testSimpleMediatorPattern();
-
-
+        System.out.println("------迭代器模式范例------");
+        IteratorPattern.testIteratorPattern();
+        System.out.println("------访问者模式范例------");
+        VisitorPattern.testVisitorPattern();
+        System.out.println("------备忘录模式范例------");
+        MementoPattern.testMementoPattern();
+        System.out.println("------备忘录模式范例扩展------");
+        MementoPattern.testMementoPrototype();
+        System.out.println("------解释器模式范例------");
+        InterpreterPattern.testInterpreterPattern();
+        System.out.println("------解释器模式范例扩展------");
+        InterpreterPattern.testJepInterpreter();
 
     }
 
