@@ -1,4 +1,4 @@
-# DesignPatternTestDemo
+# 设计模式
 
 #### 介绍
 23种设计模式简述以及设计模式中经常用到的类图，类之间的关系和面向对象7个设计原则
@@ -35,29 +35,29 @@
 用于处理对象之间的关系，这些关系可以通过组合或聚合来实现，在运行时刻是可以变化的，更具动态性。除了以上 4 种，其他的都是对象模式。
 
 #### 23种设计模式的功能:
-1. [单例（Singleton）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/SingletonPattern.java)某个类只能生成一个实例，该类提供了一个全局访问点供外部获取该实例，其拓展是有限多例模式
-2. [原型（Prototype）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/PrototypePattern.java)将一个对象作为原型，通过对其进行复制而克隆出多个和原型类似的新实例。
-3. [工厂方法（Factory Method）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FactoryMethodPattern.java)定义一个用于创建产品的接口，由子类决定生产什么产品。
-4. [抽象工厂（AbstractFactory）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/AbstractFactoryPattern.java)提供一个创建产品族的接口，其每个子类可以生产一系列相关的产品
-5. [建造者（Builder）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/BuilderPattern.java)将一个复杂对象分解成多个相对简单的部分，然后根据不同需要分别创建他们，最后构建成该复杂对象。
-6. [代理（Proxy）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ProxyPattern.java)为某对象提供一种代理以控制对该对象的访问，即客户端通过代理间接的访问该对象，从而限制、增强或修改该对象一些特性
-7. [适配器（Adapter）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/AdapterPattern.java)将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的那些类能一起工作。
-8. [桥接（Bridge）模式:](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/BridgePattern.java)将抽象与实现分离，使它们可以独立变化。它是用组合关系代替继承关系来实现，从而降低了抽象和实现这两个可变维度的耦合度。
-9. [装饰（Decorator）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/DecoratorPattern.java)动态的给对象增加一些职责，即增加其额外的功能。
-10. [外观（Facade）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FacadePattern.java)为多个复杂的子系统提供一个一致的接口，使这些子系统更加容易被访问。
-11. [享元（Flyweight）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FlyweightPattern.java)运用共享技术来有效地支持大量细粒度对象的复用。
-12. [组合（Composite）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/CompositePattern.java)将对象组合成树状层次结构，使用户对单个对象和组合对象具有一致的访问性。
-13. [模板方法（TemplateMethod）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/TemplateMethodPattern.java)定义一个操作中的算法骨架，而将算法的一些步骤延迟到子类中，使得子类可以不改变该算法结构的情况下重定义该算法的某些特定步骤。
-14. [策略（Strategy）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/StrategyPattern.java)定义一系列算法，并将每个算法封装起来，是它们可以相互替换，且算法的改变不会影响使用算法的客户。
-15. [命令（Command）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/CommandPattern.java)将一个请求封装为一个对象,使发出请求的责任和执行请求的责任分割开。
-16. [职责链（Chain of Responsibility）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ChainOfResponsibilityPattern.java)把请求从链中的一个对象传到下一个对象，直到请求被响应为止。通过这种方式去除对象之间的耦合。
-17. [状态（State）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/StatePattern.java)允许一个对象在其内部状态发生改变时改变其行为能力。
-18. [观察者（Observer）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ObserverPattern.java)多个对象间存在一对多关系，当一个对象发生改变时，把这种改变通知给其他多个对象，从而影响其他对象的行为。
-19. [中介者（Mediator）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/MediatorPattern.java)定义一个中介对象来简化原有对象之间的交互关系，降低系统中对象间的耦合度，使原有对象之间不必相互了解。
-20. [迭代器（Iterator）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/IteratorPattern.java)提供一种方法来顺序访问聚合对象中的一系列数据，而不暴露聚合对象的内部表示。
-21. [访问者（Visitor）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/VisitorPattern.java)在不改变集合元素的前提下，为一个集合中的每个元素提供多种访问方式，即每个元素有多个访问者对象访问。
-22. [备忘录（Memento）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/MementoPattern.java)在不破坏封装性的前提下，获取并保存一个对象的内部状态，以便以后恢复它。
-23. [解释器（Interpreter）模式：](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/InterpreterPattern.java)提供如何定义语言的文法，以及对语言句子的解释方法，即解释器。
+1. [单例（Singleton）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/SingletonPattern.java)：某个类只能生成一个实例，该类提供了一个全局访问点供外部获取该实例，其拓展是有限多例模式
+2. [原型（Prototype）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/PrototypePattern.java)：将一个对象作为原型，通过对其进行复制而克隆出多个和原型类似的新实例。
+3. [工厂方法（Factory Method）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FactoryMethodPattern.java)：定义一个用于创建产品的接口，由子类决定生产什么产品。
+4. [抽象工厂（AbstractFactory）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/AbstractFactoryPattern.java)：提供一个创建产品族的接口，其每个子类可以生产一系列相关的产品
+5. [建造者（Builder）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/BuilderPattern.java)：将一个复杂对象分解成多个相对简单的部分，然后根据不同需要分别创建他们，最后构建成该复杂对象。
+6. [代理（Proxy）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ProxyPattern.java)：为某对象提供一种代理以控制对该对象的访问，即客户端通过代理间接的访问该对象，从而限制、增强或修改该对象一些特性
+7. [适配器（Adapter）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/AdapterPattern.java)：将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的那些类能一起工作。
+8. [桥接（Bridge）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/BridgePattern.java)：将抽象与实现分离，使它们可以独立变化。它是用组合关系代替继承关系来实现，从而降低了抽象和实现这两个可变维度的耦合度。
+9. [装饰（Decorator）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/DecoratorPattern.java)：动态的给对象增加一些职责，即增加其额外的功能。
+10. [外观（Facade）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FacadePattern.java)：为多个复杂的子系统提供一个一致的接口，使这些子系统更加容易被访问。
+11. [享元（Flyweight）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/FlyweightPattern.java)：运用共享技术来有效地支持大量细粒度对象的复用。
+12. [组合（Composite）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/CompositePattern.java)：将对象组合成树状层次结构，使用户对单个对象和组合对象具有一致的访问性。
+13. [模板方法（TemplateMethod）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/TemplateMethodPattern.java)：定义一个操作中的算法骨架，而将算法的一些步骤延迟到子类中，使得子类可以不改变该算法结构的情况下重定义该算法的某些特定步骤。
+14. [策略（Strategy）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/StrategyPattern.java)：定义一系列算法，并将每个算法封装起来，是它们可以相互替换，且算法的改变不会影响使用算法的客户。
+15. [命令（Command）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/CommandPattern.java)：将一个请求封装为一个对象,使发出请求的责任和执行请求的责任分割开。
+16. [职责链（Chain of Responsibility）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ChainOfResponsibilityPattern.java)：把请求从链中的一个对象传到下一个对象，直到请求被响应为止。通过这种方式去除对象之间的耦合。
+17. [状态（State）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/StatePattern.java)：允许一个对象在其内部状态发生改变时改变其行为能力。
+18. [观察者（Observer）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/ObserverPattern.java)：多个对象间存在一对多关系，当一个对象发生改变时，把这种改变通知给其他多个对象，从而影响其他对象的行为。
+19. [中介者（Mediator）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/MediatorPattern.java)：定义一个中介对象来简化原有对象之间的交互关系，降低系统中对象间的耦合度，使原有对象之间不必相互了解。
+20. [迭代器（Iterator）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/IteratorPattern.java)：提供一种方法来顺序访问聚合对象中的一系列数据，而不暴露聚合对象的内部表示。
+21. [访问者（Visitor）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/VisitorPattern.java)：在不改变集合元素的前提下，为一个集合中的每个元素提供多种访问方式，即每个元素有多个访问者对象访问。
+22. [备忘录（Memento）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/MementoPattern.java)：在不破坏封装性的前提下，获取并保存一个对象的内部状态，以便以后恢复它。
+23. [解释器（Interpreter）模式](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/pattern/InterpreterPattern.java)：提供如何定义语言的文法，以及对语言句子的解释方法，即解释器。
 
 #### 类之间的关系
 在软件系统中，类不是孤立存在的，类与类之间存在各种关系。根据类与类之间的耦合度从弱到强排列依次为：依赖关系、关联关系、聚合关系、组合关系、泛化关系和实现关系。其中泛化和实现的耦合度相等，它们是最强的。
@@ -81,10 +81,10 @@
 #### 七大设计原则
 在软件开发中，为了提高软件系统的可维护性和可复用性，增加软件的可扩展性和灵活性，程序员要尽量根据 7 条原则来开发程序，
 从而提高软件开发效率、节约软件开发成本和维护成本。面向对象的7个设计原则如下：
-1. [开闭原则（Open Closed Principle，OCP）:](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/OpenClosedPrinciple.java)软件实体应当对扩展开放，对修改关闭,这就是开闭原则的经典定义。
-2. [里氏替换原则（Liskov Substitution Principle，LSP）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/LiskovSubstitutionPrinciple.java)继承必须确保超类所拥有的性质在子类中仍然成立
-3. [依赖倒置原则（Dependence Inversion Principle，DIP）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/DependenceInversionPrinciple.java)高层模块不应该依赖低层模块，两者都应该依赖其抽象；抽象不应该依赖细节，细节应该依赖抽象
-4. [单一职责原则（Single Responsibility Principle，SRP）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/SingleResponsibilityPrinciple.java)一个类应该有且仅有一个引起它变化的原因，否则类应该被拆分
-5. [接口隔离原则（Interface Segregation Principle，ISP）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/InterfaceSegregationPrinciple.java)将臃肿庞大的接口拆分成更小的和更具体的接口,让接口中只包含客户感兴趣的方法
-6. [迪米特法则（Law of Demeter，LoD）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/LawOfDemeter.java)只与你的直接朋友交谈，不跟“陌生人”说话
-7. [合成复用原则（Composite Reuse Principle，CRP）: ](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/CompositeReusePrinciple.java)软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现
+1. [开闭原则（Open Closed Principle，OCP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/OpenClosedPrinciple.java): 软件实体应当对扩展开放，对修改关闭,这就是开闭原则的经典定义。
+2. [里氏替换原则（Liskov Substitution Principle，LSP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/LiskovSubstitutionPrinciple.java): 继承必须确保超类所拥有的性质在子类中仍然成立
+3. [依赖倒置原则（Dependence Inversion Principle，DIP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/DependenceInversionPrinciple.java): 高层模块不应该依赖低层模块，两者都应该依赖其抽象；抽象不应该依赖细节，细节应该依赖抽象
+4. [单一职责原则（Single Responsibility Principle，SRP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/SingleResponsibilityPrinciple.java): 一个类应该有且仅有一个引起它变化的原因，否则类应该被拆分
+5. [接口隔离原则（Interface Segregation Principle，ISP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/InterfaceSegregationPrinciple.java): 将臃肿庞大的接口拆分成更小的和更具体的接口,让接口中只包含客户感兴趣的方法
+6. [迪米特法则（Law of Demeter，LoD）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/LawOfDemeter.java): 只与你的直接朋友交谈，不跟“陌生人”说话
+7. [合成复用原则（Composite Reuse Principle，CRP）](https://github.com/BodhiSun/DesignPatternTestDemo/blob/master/app/src/main/java/com/xiaozi/designpatterntestdemo/principle/CompositeReusePrinciple.java): 软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现
